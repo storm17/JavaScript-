@@ -1,0 +1,51 @@
+<html>
+<head>
+<script>
+
+  function Suma() 
+	{
+		var valorA = parseInt(prompt('Dame el valor A:'));
+		var valorB = parseInt(prompt('Dame valor B:'));
+		var resultado=valorA + valorB; 
+		document.getElementById('resultado').value = (valorA+"  +  " + valorB + " = " + resultado);
+		
+	}
+	
+	function Resta()
+	{
+				var valorA = parseInt(prompt('Dame el valor A:'));
+		var valorB = parseInt(prompt('Dame valor B:'));
+		var resultado=valorA - valorB; 
+		document.getElementById('resultado').value = (valorA+"  +  " + valorB + " = " + resultado);
+	}
+	
+	function Division()
+	{
+				var valorA = parseInt(prompt('Dame el valor A:'));
+		var valorB = parseInt(prompt('Dame valor B:'));
+		var resultado=valorA / valorB; 
+		document.getElementById('resultado').value = (valorA+"  +  " + valorB + " = " + resultado);
+	}
+	
+	function Multiplicacion()
+	{
+	            var valorA = parseInt(prompt('Dame el valor A:'));
+		var valorB = parseInt(prompt('Dame valor B:'));
+		var resultado=valorA * valorB;
+		document.getElementById('resultado').value = (valorA+"  +  " + valorB + " = " + resultado);
+	}	
+</script>
+<title>Funciones de resta, división, suma y multiplicación</title>
+</head>
+
+<body>
+	<p>Resultado:      
+	<input name="resultado" type="text" id="resultado" size="30" align="right"/>
+</p>
+	  <input type="button" name="btn_suma" id="btn_suma" value="Suma" onClick="Suma()" />
+	  <input type="button" name="btn_resta" id="btn_resta" value="Resta" onClick="Resta()"/>
+	  <input type="button" name="btn_multi" id="btn_multi" value="Division" onClick="Division()" />
+      <input type="button" name="btn_multi" id="btn_multi" value="Multiplicacion" onClick="Multiplicacion()"/>
+	  </p>
+</body>
+</html>
